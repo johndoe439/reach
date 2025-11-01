@@ -32,8 +32,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Pointwealthtrades | Best Platform" />
-    <title>Pointwealthtrades | Best Platform</title>
+    <meta name="description" content="Reach Take | Staking " />
+    <title> Reach Take </title>
+
     <meta name="robots" content="noindex, follow">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -110,12 +111,12 @@
                             </div>
                         </div>
                         <!-- Submit Button -->
-                        <button  class="btn b-solid btn-primary-solid w-full dk-theme-card-square">Confirm
+                        <button class="btn b-solid btn-primary-solid w-full dk-theme-card-square">Confirm
                             Password</button>
                     </form>
                     <div class="text-gray-900 dark:text-dark-text font-medium leading-none mt-5">
                         Back to /
-                        <a href="{{ route ('loign')}}" class="text-primary-500 font-semibold">Sign in</a>
+                        <a href="{{ route('loign') }}" class="text-primary-500 font-semibold">Sign in</a>
                     </div>
                 </div>
             </div>

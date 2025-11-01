@@ -5,9 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Pointwealthtrades | Best Platform</title>
+
     <meta name="robots" content="noindex, follow">
-    <meta name="description" content="Pointwealthtrades | Best Platform" />
+    <meta name="description" content="Reach Take | Staking " />
+    <title> Reach Take </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->

@@ -5,12 +5,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="Pointwealthtrades | Best Staking Platform" />
-    <title>Pointwealthtrades | Best Platform</title>
+    <meta name="description" content="Reach Take | Staking " />
+    <title> Reach Take </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="dash/images/favicon.ico" />
+    <link rel="icon" href="./frontend/img/logo.png">
     <!-- Style CSS -->
     <link rel="stylesheet" href="{{ asset('/dash/css/output.css') }}" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>

@@ -6,13 +6,13 @@
         <div
             class="px-4 h-header flex items-center shrink-0 group-data-[sidebar-size=sm]:px-2 group-data-[sidebar-size=sm]:justify-center">
             <a href="{{ route('admin') }}" class="group-data-[sidebar-size=lg]:block hidden">
-                <img src="/frontend/img/app-logo.png" height="50" width="80" alt="logo"
+                <img src="/frontend/img/logo.png" height="70" width="100" alt="logo"
                     class="group-[.dark]:hidden" />
-                <img src="/frontend/img/app-logo.png" height="50" width="80" alt="logo"
+                <img src="/frontend/img/logo.png" height="70" width="100" alt="logo"
                     class="group-[.light]:hidden" />
             </a>
             <a href="{{ route('admin') }}" class="group-data-[sidebar-size=lg]:hidden block">
-                <img src="assets/images/logo/logo-icon.svg" alt="logo" />
+                <img src="/frontend/img/logo.png" height="70" width="100"  alt="logo" class="logo-default">
             </a>
         </div>
         <div id="app-menu-scrollbar" data-scrollbar

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html lang="en" >
+<html lang="en">
+
 <head>
     <meta charset="utf-8">
 
@@ -10,9 +11,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title> Reach Take</title>
+    <meta name="description" content="Reach Take | Staking " />
+    <title> Reach Take </title>
+
     <!-- Standard Favicon -->
-    <link rel="icon" href="./frontend/img/fav/favicon-96x96.png">
+    <link rel="icon" href="./frontend/img/logo.png">
 
 
 
@@ -55,7 +58,7 @@
     <nav class="navbar navbar-expand-lg fixed-top center-brand static-nav home2">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="/frontend/img/logo.png" alt="logo" class="logo-default">
+                <img src="/frontend/img/logo.png" height="70" width="100" alt="logo" class="logo-default">
             </a>
             <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse"
                 data-target="#xeronav">
@@ -65,10 +68,7 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item drop_menu"> <a class="nav-link active" href="#">Home <i
                                 class="fas fa-caret-down"></i></a>
-                        <ul>
-                            <li><a href="index.html">Home one</a></li>
-                            <li><a href="index-2.html">Home two</a></li>
-                        </ul>
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about_id">about</a>
@@ -76,9 +76,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#features_id">features</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#product_id">product</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#testi_id">testimonial </a>
                     </li>
@@ -86,8 +84,9 @@
                         <a class="nav-link" href="#contact_id">contact </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn" href="#">buy now </a>
+                        <a class="nav-link" href="{{ route('login') }}">Login </a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -260,6 +259,26 @@
     <script src="/frontend/js/vendor/easing.js"></script>
     <!--main script-->
     <script src="./frontend/js/main.js"></script>
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+        var _smartsupp = _smartsupp || {};
+        _smartsupp.key = '0064f1e7df3ea50f32fadc06785c39a89606ed24';
+        window.smartsupp || (function(d) {
+            var s, c, o = smartsupp = function() {
+                o._.push(arguments)
+            };
+            o._ = [];
+            s = d.getElementsByTagName('script')[0];
+            c = d.createElement('script');
+            c.type = 'text/javascript';
+            c.charset = 'utf-8';
+            c.async = true;
+            c.src = 'https://www.smartsuppchat.com/loader.js?';
+            s.parentNode.insertBefore(c, s);
+        })(document);
+    </script>
+    <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
 
 </body>
 

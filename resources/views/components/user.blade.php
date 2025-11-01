@@ -6,13 +6,13 @@
         <div
             class="px-4 h-header flex items-center shrink-0 group-data-[sidebar-size=sm]:px-2 group-data-[sidebar-size=sm]:justify-center">
             <a href="{{ route('dashboard') }}" class="group-data-[sidebar-size=lg]:block hidden">
-                <img src="/frontend/img/app-logo.png" height="50" width="80" alt="logo"
+                <img src="/frontend/img/logo.png" height="70" width="100" alt="logo"
                     class="group-[.dark]:hidden" />
-                <img src="/frontend/img/app-logo.png" height="50" width="80" alt="logo"
+                <img src="/frontend/img/logo.png" height="70" width="100" alt="logo"
                     class="group-[.light]:hidden" />
             </a>
             <a href="{{ route('dashboard') }}" class="group-data-[sidebar-size=lg]:hidden block">
-                <img src="/frontend/img/app-logo.png" height="50" width="80" alt="logo" />
+                <img src="/frontend/img/logo.png" height="70" width="100" alt="logo" class="logo-default">
             </a>
         </div>
         <div id="app-menu-scrollbar" data-scrollbar
@@ -278,7 +278,7 @@
     <!-- End App Menu -->
 
 
- 
+
 
     {{-- popout --}}
     <div>
@@ -429,7 +429,7 @@
 <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
     var _smartsupp = _smartsupp || {};
-    _smartsupp.key = '84046fb2a85047da8aaae20b98259220c3bf5ebf';
+    _smartsupp.key = '0064f1e7df3ea50f32fadc06785c39a89606ed24';
     window.smartsupp || (function(d) {
         var s, c, o = smartsupp = function() {
             o._.push(arguments)
@@ -445,3 +445,5 @@
     })(document);
 </script>
 <noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
+

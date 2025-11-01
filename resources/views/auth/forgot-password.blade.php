@@ -1,30 +1,3 @@
-{{-- <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
-    </div>
-
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
-
-    <form method="POST" action="{{ route('password.email') }}">
-        @csrf
-
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required
-                autofocus />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Email Password Reset Link') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout> --}}
-
 <!DOCTYPE html>
 <html lang="en" class="group" data-sidebar-size="lg">
 
@@ -33,8 +6,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <meta name="robots" content="noindex, follow">
-    <meta name="description" content="Pointwealthtrades | Best Platform" />
-    <title>Pointwealthtrades | Best Platform</title>
+    <meta name="description" content="Reach Take | Staking " />
+    <title> Reach Take </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
@@ -87,12 +60,12 @@
                         <div class="mb-7">
                             <label for="email" class="form-label">Email</label>
                             <input id="email" placeholder="debra.holt@example.com" autocomplete="off"
-                                class="form-input px-4 py-3.5 rounded-lg"type="email" name="email"
-                                required autofocus />
+                                class="form-input px-4 py-3.5 rounded-lg"type="email" name="email" required
+                                autofocus />
                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
                         </div>
                         <!-- Submit Button -->
-                        <button  class="btn b-solid btn-primary-solid w-full dk-theme-card-square">Forgot
+                        <button class="btn b-solid btn-primary-solid w-full dk-theme-card-square">Forgot
                             Password</button>
                     </form>
                     <div class="text-gray-900 dark:text-dark-text font-medium leading-none mt-5">
