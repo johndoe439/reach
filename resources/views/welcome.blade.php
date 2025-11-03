@@ -4,12 +4,12 @@
         <header class="hero-banner-sec" id="homes">
             <div class="container">
                 <div class="row justify-content-xl-start justify-content-lg-center justify-content-md-center">
-                    <div class="col-xl-7 col-lg-10 col-md-8">
+                    <div class="col-xl-7 col-lg-8 col-md-8">
 
                         <div class="banner-inside">
-                            <h1>Supercharge Your <br>
-                                Rewards <br>
-                                With Reachtake
+                            <h1>Reach Take <br>
+                                Supercharge Your Rewards
+                                With us
                             </h1>
                             <p>
                                 Maximize your earnings—stake on Reachtake and watch your assets grow with top-tier APYs.
@@ -18,10 +18,12 @@
                                 and full flexibility. Your rewards start compounding today.
                             </p>
                             <div class="group-btn">
-                                <a href="{{ route ('login')}}" class="btn btn1">Start Staking</a>
-                                <a href="{{ route ('register')}}" class="btn btn2">Explore Pools</a>
+                                <a href="{{ route('login') }}" class="btn btn1">Start Staking</a>
+                                <a href="{{ route('register') }}" class="btn btn2">Explore Pools</a>
                             </div>
                         </div><!--/.banner-inside-->
+
+                       
 
                     </div>
                 </div>
