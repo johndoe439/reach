@@ -1,753 +1,1154 @@
 <x-guest-layout>
     <main>
-        <!--hero-banner-->
-        <header class="hero-banner-sec" id="homes">
+        <section class="hero hero-v2">
+            <div class="hero__background hero__background--grid">
+                <img class="hero__grid-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-grid-bg.png"
+                    alt="Background Grid Hero" />
+            </div>
+            <div class="hero__background hero__background--pattern">
+                <img class="hero__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-pattern.png"
+                    alt="Background Pattern Hero" />
+            </div>
+            <div class="hero__background--mobile hero__background--grid">
+                <img class="hero__grid-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-hero-grid.png"
+                    alt="Background Grid Hero" />
+            </div>
+            <div class="hero__background--mobile hero__background--pattern">
+                <img class="hero__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-hero-pattern.png"
+                    alt="Background Pattern Hero" />
+            </div>
             <div class="container">
-                <div class="row justify-content-xl-start justify-content-lg-center justify-content-md-center">
-                    <div class="col-xl-7 col-lg-8 col-md-8">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Reach Take </h1>
+                        <p class="fb-lg hero__subtitle">
+                            Automate your trading and investing. Your gateway to an open financial ecosystem. Begin with
+                            the simplest, most secure platform
+                            for buying, trading, and investing in digital assets.
+                        </p>
 
-                        <div class="banner-inside">
-                            <h1>Reach Take <br>
-                                Supercharge Your Rewards
-                                With us
-                            </h1>
-                            <p>
-                                Maximize your earnings—stake on Reachtake and watch your assets grow with top-tier APYs.
-                                No lockups, real-time tracking, and unbreakable security let you earn more with zero
-                                stress
-                                and full flexibility. Your rewards start compounding today.
+                        <center>
+                            <div class="d-block d-lg-none">
+                                <img width="100%"
+                                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-illustration.png"
+                                    alt="Hero Illustration" />
+                            </div>
+                        </center>
+
+                        <a href="{{ route('register') }}" class="btn btn-lg btn-pill" style="background: #605dff">Get
+                            Started</a>
+                    </div>
+                    <div class="hero__illustration">
+                        <img src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-illustration.png"
+                            alt="Hero Illustration" />
+                    </div>
+                </div>
+
+                <center>
+                    <div class="p-5 row">
+                        <div class="col-12 p-2">
+                            <span class="me-2"><strong>Great</strong> </span><img width="170px"
+                                src="/frontend/assets/stars-5.svg" alt="" />
+                        </div>
+
+                        <div class="col-12 p-1 mt-2 mt-lg-0">
+                            <span><strong>4.7</strong> out of 5 based on
+                                <strong>607 reviews</strong></span>
+                            <img class="" width="100px" src="/frontend/assets/trustpilot-logo-white-icon.svg"
+                                alt="" />
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="container crypto-graph">
+                <div class="crypto-graph-carousel">
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                    "symbol": "NASDAQ:META",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                    "symbol": "NASDAQ:NVDA",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                    "symbol": "NASDAQ:TSLA",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                    "symbol": "COINBASE:ETHUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                    "symbol": "COINBASE:BTCUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                    "symbol": "COINBASE:DOGEUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript"
+                                src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js" async>
+                                {
+                                    "symbol": "COINBASE:XRPUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                </div>
+                <div class="slick__pagination">
+                    <div class="crypto-graph-carousel__pagination slick__pagination--dots">
+                        <div class="crypto-graph-carousel__slick-slider-dots slick-slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature">
+            <div class="feature__background feature__background--pattern">
+                <img class="feature__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-feature-pattern.png"
+                    alt="Background Pattern Feature" />
+            </div>
+            <div class="feature__background--mobile feature__background--pattern">
+                <img class="feature__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-feature-pattern.png"
+                    alt="Background Pattern Feature" />
+            </div>
+            <div class="container">
+                <div class="feature__container">
+                    <div class="feature__group">
+                        <div class="feature__items feature__items--1">
+                            <div class="feature-items__img">
+                                <img src="/frontend/assets/media/images/icons/icon-portofolio-manager.svg"
+                                    alt="Portfolio Manager" />
+                            </div>
+                            <h5 class="feature-items__title">Portfolio Manager</h5>
+                            <p class="fb-regular feature-items__desc">
+                                Buy, sell, and track popular digital currencies—all in one place.
                             </p>
-                            <div class="group-btn">
-                                <a href="{{ route('login') }}" class="btn btn1">Start Staking</a>
-                                <a href="{{ route('register') }}" class="btn btn2">Explore Pools</a>
+                        </div>
+                        <div class="feature__items feature__items--2">
+                            <div class="feature-items__img">
+                                <img src="/frontend/assets/media/images/icons/phone.svg" alt="Swift Execution" />
                             </div>
-                        </div><!--/.banner-inside-->
-
-                       
-
+                            <h5 class="feature-items__title">Swift Execution</h5>
+                            <p class="fb-regular feature-items__desc">
+                                Experience the industry’s lowest latency and fastest trade execution. Built for speed.
+                            </p>
+                        </div>
+                        <div class="feature__items feature__items--3">
+                            <div class="feature-items__img">
+                                <img src="/frontend/assets/media/images/icons/lock.svg" alt="Trusted and Secure" />
+                            </div>
+                            <h5 class="feature-items__title">Trusted and Secure</h5>
+                            <p class="fb-regular feature-items__desc">
+                                Store funds in a vault with time-delayed withdrawals for enhanced protection.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature__content">
+                        <h2 class="feature__title">
+                            The most reliable cryptocurrency platform.
+                        </h2>
+                        <p class="fb-regular feature__subtitle">
+                            Cryptolly offers a range of tools that make it the ideal starting point for trading.
+                        </p>
+                        <a href="{{ route('register') }}" class="btn btn-pill feature__button"
+                            style="background: #605dff">Let’s Trade Now</a>
                     </div>
                 </div>
-            </div><!--/.container-->
-        </header>
-        <!--hero-banner-->
-
-        <!--hero down promo-->
-        <section class="hero-dwn-prmo">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-dwn-prm">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/promo1.png" alt="Instant Rewards" />
-                            </div>
-                            <div class="text">
-                                <h4>Instant Rewards</h4>
-                                <p>Earn from the moment you stake</p>
-                            </div>
-                        </div><!--/.single-dwn-prm-->
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-dwn-prm">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/promo2.png" alt="No Lockups" />
-                            </div>
-                            <div class="text">
-                                <h4>No Lockups</h4>
-                                <p>Unstake and withdraw anytime</p>
-                            </div>
-                        </div><!--/.single-dwn-prm-->
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6">
-                        <div class="single-dwn-prm">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/promo2.png" alt="Bank-Grade Security" />
-                            </div>
-                            <div class="text">
-                                <h4>Bank-Grade Security</h4>
-                                <p>Protected by audited smart contracts</p>
-                            </div>
-                        </div><!--/.single-dwn-prm-->
-                    </div>
-                </div>
-            </div><!--/.container-->
+            </div>
         </section>
-        <!--hero down promo-->
 
-        <!--small devices-->
-        <section class="small-device-sltn">
+        <section class="exchange">
+            <div class="exchange__background exchange__background--pattern">
+                <img class="exchange__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-exchange-pattern.png"
+                    alt="Background Pattern Exchange" />
+            </div>
+            <div class="exchange__background--mobile exchange__background--pattern">
+                <img class="exchange__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-exchange-pattern.png"
+                    alt="Background Pattern Exchange" />
+            </div>
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-12 col-xl-6 col-lg-6 order-lg-1 order-2">
-                        <div class="small-dvc-inside">
-                            <h6>Powerful Staking</h6>
-                            <h2>Anytime, Anywhere</h2>
-                            <p>Reachtake brings enterprise-grade staking to your fingertips. Stake, track, and compound
-                                rewards directly from your phone or desktop—no complex setups, no waiting. Real-time APY
-                                updates and one-tap unstaking keep you in full control.</p>
-                            <p>Seamless across all devices. Secure by design. Built for growth.</p>
-                            <a href="#" class="btn">Start Staking Now</a>
+                <div class="exchange__container">
+                    <div class="exchange__content">
+                        <h2 class="exchange__title">
+                            Start trading and investing in just a few steps.
+                        </h2>
+                        <p class="fb-regular exchange__subtitle">
+                            We’ve simplified the process. Follow these steps to set up your account and begin trading.
+                        </p>
+                        <div class="exchange__groups">
+                            <div class="exchange__items exchange__items--1">
+                                <div class="exchange-items__icons">
+                                    <img src="/frontend/assets/media/images/icons/add-user.svg"
+                                        alt="Create an account" />
+                                </div>
+                                <div class="exchange-items__detail">
+                                    <h5>Create an account</h5>
+                                </div>
+                            </div>
+                            <div class="exchange__items exchange__items--2">
+                                <div class="exchange-items__icons">
+                                    <img src="/frontend/assets/media/images/icons/bank.svg"
+                                        alt="Connect your wallet" />
+                                </div>
+                                <div class="exchange-items__detail">
+                                    <h5>Connect your wallet</h5>
+                                </div>
+                            </div>
+                            <div class="exchange__items exchange__items--3">
+                                <div class="exchange-items__icons">
+                                    <img src="/frontend/assets/media/images/icons/wallet.svg"
+                                        alt="Start trading & investing now" />
+                                </div>
+                                <div class="exchange-items__detail">
+                                    <h5>Start trading & investing now</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-5 offset-md-1 col-xl-6 col-lg-6 order-lg-2 order-1 text-lg-end mb-4 mb-lg-0">
-                        <div class="small-dvc-img">
-                            <img src="/frontend/img/small-img.png" alt="Reachtake Mobile Dashboard" />
+                    <div class="buy-sell-cards buy-sell-cards--v2">
+                        <div class="buy-sell-cards__container">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+
+                                <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+                                    {
+                                        "symbol": "NASDAQ:TSLA",
+                                        "height": 300,
+                                        "width": "100%",
+                                        "locale": "en",
+                                        "colorTheme": "dark",
+                                        "isTransparent": true
+                                    }
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
+
+                            <a href="{{ route('register') }}" class="mt-5 btn btn-pill feature__button"
+                                style="background: #605dff">Trade Stocks</a>
                         </div>
                     </div>
                 </div>
-            </div><!--/.container-->
+            </div>
         </section>
-        <!--small devices-->
-
-        <!--video-player-->
-        <section class="video-play-promo">
+        {{-- <section class="hero hero-v2">
+            <div class="hero__background hero__background--grid">
+                <img class="hero__grid-bg" src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-grid-bg.png"
+                    alt="Background Grid Hero" />
+            </div>
+            <div class="hero__background hero__background--pattern">
+                <img class="hero__pattern-bg" src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-pattern.png"
+                    alt="Background Pattern Hero" />
+            </div>
+            <div class="hero__background--mobile hero__background--grid">
+                <img class="hero__grid-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-hero-grid.png"
+                    alt="Background Grid Hero" />
+            </div>
+            <div class="hero__background--mobile hero__background--pattern">
+                <img class="hero__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-hero-pattern.png"
+                    alt="Background Pattern Hero" />
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
-                        <div class="inside-video-txt">
-                            <h2>Reachtake: Staking, Simplified</h2>
-                            <p>Effortless rewards. Transparent tracking. Built for the modern holder.</p>
-                            <a class="btn venobox vbox-item" data-vbtype="video"
-                                href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
-                                <i class="fas fa-play fa-2x"></i>
-                            </a>
-                        </div><!--/.inside-video-txt-->
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">Automate your trades & investments.</h1>
+                        <p class="fb-lg hero__subtitle">
+                            Your guide to the world of an open financial system. Get started
+                            with the easiest and most secure platform to buy, trade and
+                            invest in digital assets.
+                        </p>
+
+                        <center>
+                            <div class="d-block d-lg-none">
+                                <img width="100%"
+                                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-illustration.png"
+                                    alt="Hero Illustration" />
+                            </div>
+                        </center>
+
+                        <a href="{{ route ('register')}}" class="btn btn-lg btn-pill"
+                            style="background: #605dff">Get Started</a>
+                    </div>
+                    <div class="hero__illustration">
+                        <img src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-illustration.png"
+                            alt="Hero Illustration" />
                     </div>
                 </div>
-            </div><!--/.container-->
+
+                <center>
+                    <div class="p-5 row">
+                        <div class="col-12 p-2">
+                            <span class="me-2"><strong>Great</strong> </span><img width="170px"
+                                src="/frontend/assets/stars-5.svg" alt="" />
+                        </div>
+
+                        <div class="col-12 p-1 mt-2 mt-lg-0">
+                            <span><strong>4.7</strong> out of 5 based on
+                                <strong>607 reviews</strong></span>
+                            <img class="" width="100px" src="/frontend/assets/trustpilot-logo-white-icon.svg"
+                                alt="" />
+                        </div>
+                    </div>
+                </center>
+            </div>
+
+            <div class="container crypto-graph">
+                <div class="crypto-graph-carousel">
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "NASDAQ:META",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "NASDAQ:NVDA",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "NASDAQ:TSLA",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "COINBASE:ETHUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "COINBASE:BTCUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "COINBASE:DOGEUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
+                    <div class="crypto-graph-carousel__items">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-mini-symbol-overview.js"
+                                async>
+                                {
+                                    "symbol": "COINBASE:XRPUSD",
+                                    "width": "100%",
+                                    "height": "200",
+                                    "locale": "en",
+                                    "dateRange": "12M",
+                                    "colorTheme": "dark",
+                                    "isTransparent": true,
+                                    "autosize": false,
+                                    "largeChartUrl": ""
+                                }
+                            </script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+                </div>
+                <div class="slick__pagination">
+                    <div class="crypto-graph-carousel__pagination slick__pagination--dots">
+                        <div class="crypto-graph-carousel__slick-slider-dots slick-slider-dots"></div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--video-player-->
-
-        <!--about product-->
-        <section class="about-product-sec" id="about_id">
+        <section class="feature">
+            <div class="feature__background feature__background--pattern">
+                <img class="feature__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-feature-pattern.png"
+                    alt="Background Pattern Feature" />
+            </div>
+            <div class="feature__background--mobile feature__background--pattern">
+                <img class="feature__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-feature-pattern.png"
+                    alt="Background Pattern Feature" />
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <div class="title text-center">
-                            <h6>Key Platform Features</h6>
-                            <h2>Why Stake with Reachtake?</h2>
-                            <p>Built for speed, security, and simplicity—Reachtake empowers you to earn high-yield
-                                rewards with full control, transparency, and zero complexity.</p>
-                        </div><!--/.title-->
-                    </div>
-                    <div class="w-100"></div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about1.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about1hv.png" alt="" class="show-hv" />
+                <div class="feature__container">
+                    <div class="feature__group">
+                        <div class="feature__items feature__items--1">
+                            <div class="feature-items__img">
+                                <img src="/frontend/assets/media/images/icons/icon-portofolio-manager.svg"
+                                    alt="Portofolio Manager" />
                             </div>
-                            <h4>One-Click Staking</h4>
-                            <p>Deposit and start earning in seconds—no technical setup required.</p>
-                        </div><!--/.single-about-->
-                    </div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about2.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about2hv.png" alt="" class="show-hv" />
+                            <h5 class="feature-items__title">Portfolio Manager</h5>
+                            <p class="fb-regular feature-items__desc">
+                                Trade & invest in popular digital currencies, keep track of
+                                them in the one place.
+                            </p>
+                        </div>
+                        <div class="feature__items feature__items--2">
+                            <div class="feature-items__img">
+                                <img src="/frontend/assets/media/images/icons/phone.svg" alt="Mobile Apps" />
                             </div>
-                            <h4>Real-Time APY</h4>
-                            <p>Live yield tracking with auto-compounding for maximum growth.</p>
-                        </div><!--/.single-about-->
-                    </div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about3.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about3hv.png" alt="" class="show-hv" />
+                            <h5 class="feature-items__title">Swift Execution</h5>
+                            <p class="fb-regular feature-items__desc">
+                                Trade with the lowest latency and highest execution speed in
+                                the industry. Our platform is built for speed.
+                            </p>
+                        </div>
+                        <div class="feature__items feature__items--3">
+                            <div class="feature-items__img">
+                                <img src="/frontend/assets/media/images/icons/lock.svg" alt="Vault protection" />
                             </div>
-                            <h4>Instant Unstaking</h4>
-                            <p>Withdraw your assets anytime—no lockups, no delays.</p>
-                        </div><!--/.single-about-->
+                            <h5 class="feature-items__title">Trusted and Secure</h5>
+                            <p class="fb-regular feature-items__desc">
+                                For added security, store your funds in a vault with time
+                                delayed withdrawals.
+                            </p>
+                        </div>
                     </div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about4.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about4hv.png" alt="" class="show-hv" />
-                            </div>
-                            <h4>Multi-Chain Support</h4>
-                            <p>Stake across Ethereum, BNB Chain, Polygon, and more—all in one place.</p>
-                        </div><!--/.single-about-->
-                    </div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about5.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about5hv.png" alt="" class="show-hv" />
-                            </div>
-                            <h4>Bank-Grade Security</h4>
-                            <p>Audited smart contracts and institutional-grade protection.</p>
-                        </div><!--/.single-about-->
-                    </div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about6.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about6hv.png" alt="" class="show-hv" />
-                            </div>
-                            <h4>Transparent Dashboard</h4>
-                            <p>See your rewards, history, and performance in real time.</p>
-                        </div><!--/.single-about-->
-                    </div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about7.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about7hv.png" alt="" class="show-hv" />
-                            </div>
-                            <h4>Zero Hidden Fees</h4>
-                            <p>Know exactly what you earn—clear, honest, and fair.</p>
-                        </div><!--/.single-about-->
-                    </div>
-
-                    <div class="col-md-6 col-xl-3 col-lg-3">
-                        <div class="single-about">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/about8.png" alt="" class="show" />
-                                <img src="/frontend/img/icon/about8hv.png" alt="" class="show-hv" />
-                            </div>
-                            <h4>24/7 Support</h4>
-                            <p>Live help whenever you need it—your success is our priority.</p>
-                        </div><!--/.single-about-->
+                    <div class="feature__content">
+                        <h2 class="feature__title">
+                            The most trusted cryptocurrency platform.
+                        </h2>
+                        <p class="fb-regular feature__subtitle">
+                            Cryptolly has a variety of features that make it the best place
+                            to start trading
+                        </p>
+                        <a href="{{ route ('register')}}" class="btn btn-pill feature__button"
+                            style="background: #605dff">Let’s Trade Now</a>
                     </div>
                 </div>
-            </div><!--/.container-->
+            </div>
         </section>
-        <!--about product-->
-
-        <!--easy-to-begin-->
-        <section class="easy-to-begin-sec">
+        <section class="exchange">
+            <div class="exchange__background exchange__background--pattern">
+                <img class="exchange__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-exchange-pattern.png"
+                    alt="Background Pattern Exchange" />
+            </div>
+            <div class="exchange__background--mobile exchange__background--pattern">
+                <img class="exchange__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-exchange-pattern.png"
+                    alt="Background Pattern Exchange" />
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="title text-center">
-                            <h6>How It Works</h6>
-                            <h2>Start Earning in 3 Steps</h2>
-                            <p>Staking with Reachtake is fast, intuitive, and secure. No jargon. No delays. Just
-                                rewards.</p>
-                        </div><!--/.title-->
-                    </div>
-                    <div class="w-100"></div>
-
-                    <div class="col-md-12">
-                        <div class="begin-inside-line">
-                            <div class="row align-items-center">
-                                <div class="col-md-4 col-xl-3 col-lg-3 offset-xl-1 offset-lg-1 offset-md-0">
-                                    <div class="begin-one">
-                                        <div class="icon">
-                                            <img src="/frontend/img/icon/begin1.png" alt="" />
-                                            <p>01</p>
-                                        </div>
-                                        <h5>Connect Wallet</h5>
-                                    </div>
+                <div class="exchange__container">
+                    <div class="exchange__content">
+                        <h2 class="exchange__title">
+                            Just a few steps to start trading & investing.
+                        </h2>
+                        <p class="fb-regular exchange__subtitle">
+                            We've made it easy for you to get started with trading. Just
+                            follow these steps to create your account and start trading.
+                        </p>
+                        <div class="exchange__groups">
+                            <div class="exchange__items exchange__items--1">
+                                <div class="exchange-items__icons">
+                                    <img src="/frontend/assets/media/images/icons/add-user.svg" alt="Add User" />
                                 </div>
-                                <div class="col-md-4 col-xl-3 col-lg-3">
-                                    <div class="begin-two">
-                                        <div class="icon">
-                                            <img src="/frontend/img/icon/begin2.png" alt="" />
-                                            <p>02</p>
-                                        </div>
-                                        <h5>Choose Pool & Stake</h5>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-xl-3 col-lg-3">
-                                    <div class="begin-three">
-                                        <div class="icon">
-                                            <img src="/frontend/img/icon/begin3.png" alt="" />
-                                            <p>03</p>
-                                        </div>
-                                        <h5>Watch Rewards Grow</h5>
-                                    </div>
+                                <div class="exchange-items__detail">
+                                    <h5>Create an account</h5>
                                 </div>
                             </div>
+                            <div class="exchange__items exchange__items--2">
+                                <div class="exchange-items__icons">
+                                    <img src="/frontend/assets/media/images/icons/bank.svg" alt="Bank" />
+                                </div>
+                                <div class="exchange-items__detail">
+                                    <h5>Connect your wallet</h5>
+                                </div>
+                            </div>
+                            <div class="exchange__items exchange__items--3">
+                                <div class="exchange-items__icons">
+                                    <img src="/frontend/assets/media/images/icons/wallet.svg" alt="Wallet" />
+                                </div>
+                                <div class="exchange-items__detail">
+                                    <h5>Start trading & investing now</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy-sell-cards buy-sell-cards--v2">
+                        <div class="buy-sell-cards__container">
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
 
-                            <img class="line-shape" src="/frontend/img/icon/line-begin.png" alt="" />
-                        </div><!--/.begin-inside-line-->
+                                <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-symbol-info.js" async>
+                                    {
+                                        "symbol": "NASDAQ:TSLA",
+                                        "height": 300,
+                                        "width": "100%",
+                                        "locale": "en",
+                                        "colorTheme": "dark",
+                                        "isTransparent": true
+                                    }
+                                </script>
+                            </div>
+                            <!-- TradingView Widget END -->
 
-                        <div class="begin-right-image text-center mt-5">
-                            <img src="/frontend/img/staking-flow.png" alt="Reachtake Staking Flow" />
-                        </div><!--/.begin-right-image-->
+                            <a href="{{ route ('register')}}" class="mt-5 btn btn-pill feature__button"
+                                style="background: #605dff">Trade Stocks</a>
+                        </div>
                     </div>
                 </div>
-            </div><!--/.container-->
+            </div>
+        </section> --}}
+        <section class="why-choose-us why-choose-us--v2">
+            <div class="why-choose-us__background why-choose-us__background--pattern">
+                <img class="why-choose-us__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-why-choose-us-pattern.png"
+                    alt="Background Pattern why-choose-us" />
+            </div>
+            <div class="why-choose-us__background--mobile why-choose-us__background--pattern">
+                <img class="why-choose-us__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-why-choose-us-pattern.png"
+                    alt="Background Pattern Why Choose Us" />
+            </div>
+            <div class="container">
+                <div class="why-choose-us__container">
+                    <img class="why-choose-us__illustration"
+                        src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-why-choose-us-illustration.svg"
+                        alt="" />
+                    <div class="why-choose-us__content">
+                        <h2 class="why-choose-us__title">Trusted by millions globally.</h2>
+                        <p class="fb-regular why-choose-us__subtitle">
+                            As a leading platform for trading and investing, we serve millions of users worldwide—and
+                            our community continues to expand daily.
+                        </p>
+                        <div class="why-choose-us__groups">
+                            <div class="why-choose-us__items">
+                                <div class="why-choose-us-items__header">
+                                    <img class="why-choose-us-items__icon"
+                                        src="/frontend/assets/media/images/icons/eyes.svg" alt="Clarity" />
+                                </div>
+                                <div class="why-choose-us-items__content">
+                                    <h5 class="why-choose-us-item__title">Transparency</h5>
+                                    <p class="fb-regular why-choose-us-item__desc">
+                                        We deliver straightforward, reliable information about our offerings, empowering
+                                        you to make confident, informed choices.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="why-choose-us__items">
+                                <div class="why-choose-us-items__header">
+                                    <img class="why-choose-us-items__icon"
+                                        src="/frontend/assets/media/images/icons/shield-done.svg" alt="Confidence" />
+                                </div>
+                                <div class="why-choose-us-items__content">
+                                    <h5 class="why-choose-us-item__title">Reliability</h5>
+                                    <p class="fb-regular why-choose-us-item__desc">
+                                        Our markets are continuously updated, delivering real-time insights with
+                                        practical, real-world impact.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="why-choose-us__items">
+                                <div class="why-choose-us-items__header">
+                                    <img class="why-choose-us-items__icon"
+                                        src="/frontend/assets/media/images/icons/community.svg" alt="Community" />
+                                </div>
+                                <div class="why-choose-us-items__content">
+                                    <h5 class="why-choose-us-item__title">Community</h5>
+                                    <p class="fb-regular why-choose-us-item__desc">
+                                        Connect with a vibrant network of passionate investors eager to learn, share,
+                                        and grow together.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--easy-to-begin-->
 
-        <!--anniversary sale-->
-        <section class="anniversary-sale-sec">
+        <div class="container" style="margin-bottom: 250px; margin-top: 50px">
+            <center class="mb-5">
+                <h2 class="exchange__title">Top Market Headlines</h2>
+
+                <p class="fb-regular why-choose-us__subtitle mt-4">
+                    The latest updates from the worlds of crypto, finance, and technology. Stay informed with breaking
+                    news and expert analysis on cryptocurrency and blockchain.
+                </p>
+            </center>
+
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+
+                <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+                    {
+                        "feedMode": "all_symbols",
+                        "isTransparent": true,
+                        "displayMode": "regular",
+                        "width": "100%",
+                        "height": 550,
+                        "colorTheme": "dark",
+                        "locale": "en"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <section class="testimonial testimonial--v2">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="anni-title text-center">
-                            <h3>Limited-Time Boosted Yields</h3>
+                <div class="testimonial__container">
+                    <h2 class="testimonial__title--mobile">
+                        What the press is saying about us
+                    </h2>
+                    <div class="testimonial-carousel__container">
+                        <h2 class="testimonial__title">What the press is saying about us</h2>
+                        <div class="testimonial-carousel__box">
+                            <div class="testimonial-carousel">
+                                <div data-slick-title="Fores" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “The platform’s transparency and robust security give us full confidence.
+                                        Trading in a fair, protected environment brings true peace of mind.”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        Fores Report, 2024
+                                    </p>
+                                </div>
+                                <div data-slick-title="Neweeks" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “The diversity of assets—from stocks to digital currencies—is outstanding.
+                                        Real-time data keeps users sharp and well-informed.”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        Neweeks Review, 2025
+                                    </p>
+                                </div>
+
+                                <div data-slick-title="MetroNew" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “Smooth navigation through charts and analytics makes it ideal for newcomers and
+                                        veteran traders alike.”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        MetroNew, 2025
+                                    </p>
+                                </div>
+                                <div data-slick-title="EuroNew" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “Social trading lets us mirror top performers effortlessly—a total game-changer
+                                        for growth.”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        EuroNew, 2025
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slick__pagination">
+                                <div class="testimonial-carousel__arrows">
+                                    <a href="#" class="testimonial-carousel__prev"><img
+                                            src="/frontend/assets/media/images/icons/arrow-circle-left.svg"
+                                            alt="Previous" />
+                                    </a><a href="#" class="testimonial-carousel__next"><img
+                                            src="/frontend/assets/media/images/icons/arrow-circle-right.svg"
+                                            alt="Next" /></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-100"></div>
-                    <div class="col-md-4">
-                        <div class="single-anni-inside">
-                            <h4>18% APY</h4>
-                            <a href="#" class="btn">ETH Pool</a>
-                        </div><!--/.single-anni-inside-->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-anni-inside">
-                            <h4>22% APY</h4>
-                            <a href="#" class="btn">BNB Pool</a>
-                        </div><!--/.single-anni-inside-->
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-anni-inside">
-                            <h4>25% APY</h4>
-                            <a href="#" class="btn">Stablecoin Pool</a>
-                        </div><!--/.single-anni-inside-->
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-md-12">
-                        <div class="anni-shop-btn">
-                            <a href="#" class="btn">View All Pools</a>
+                    <div class="testimonial-media">
+                        <div class="testimonial-media__items active">
+                            <p class="testimonial-media__items-title">Neweeks</p>
+                        </div>
+                        <div class="testimonial-media__items next">
+                            <p class="testimonial-media__items-title">Fores</p>
+                        </div>
+                        <div class="testimonial-media__items next-2">
+                            <p class="testimonial-media__items-title">MetroNew</p>
+                        </div>
+                        <div class="testimonial-media__items prev">
+                            <p class="testimonial-media__items-title">EuroNew</p>
                         </div>
                     </div>
                 </div>
-            </div><!--/.container-->
+            </div>
         </section>
-        <!--anniversary sale-->
-
-        <!--amazing feature-->
-        <section class="amazing-feature-sec" id="features_id">
+        {{-- <section class="why-choose-us why-choose-us--v2">
+            <div class="why-choose-us__background why-choose-us__background--pattern">
+                <img class="why-choose-us__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-why-choose-us-pattern.png"
+                    alt="Background Pattern why-choose-us" />
+            </div>
+            <div class="why-choose-us__background--mobile why-choose-us__background--pattern">
+                <img class="why-choose-us__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-why-choose-us-pattern.png"
+                    alt="Background Pattern Why Choose Us" />
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 offset-md-3">
-                        <div class="title text-center">
-                            <h6>Next-Level Staking Tools</h6>
-                            <h2>Features That Put You in Control</h2>
-                            <p>Reachtake isn’t just another staking platform—it’s engineered for performance,
-                                transparency, and effortless growth.</p>
-                        </div><!--/.title-->
+                <div class="why-choose-us__container">
+                    <img class="why-choose-us__illustration"
+                        src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-why-choose-us-illustration.svg"
+                        alt="" />
+                    <div class="why-choose-us__content">
+                        <h2 class="why-choose-us__title">Millions of Users Worldwide.</h2>
+                        <p class="fb-regular why-choose-us__subtitle">
+                            We are one of the most trusted trading & investment platform. We
+                            have millions of users worldwide, and we are growing every day.
+                        </p>
+                        <div class="why-choose-us__groups">
+                            <div class="why-choose-us__items">
+                                <div class="why-choose-us-items__header">
+                                    <img class="why-choose-us-items__icon"
+                                        src="/frontend/assets/media/images/icons/eyes.svg" alt="Clarity" />
+                                </div>
+                                <div class="why-choose-us-items__content">
+                                    <h5 class="why-choose-us-item__title">Clarity</h5>
+                                    <p class="fb-regular why-choose-us-item__desc">
+                                        We provide clear and concise information about our
+                                        products and services, so you can make informed decisions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="why-choose-us__items">
+                                <div class="why-choose-us-items__header">
+                                    <img class="why-choose-us-items__icon"
+                                        src="/frontend/assets/media/images/icons/shield-done.svg" alt="Confidence" />
+                                </div>
+                                <div class="why-choose-us-items__content">
+                                    <h5 class="why-choose-us-item__title">Confidence</h5>
+                                    <p class="fb-regular why-choose-us-item__desc">
+                                        Our markets are always up to date, sparking curiosity
+                                        with<br />real-world relevance.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="why-choose-us__items">
+                                <div class="why-choose-us-items__header">
+                                    <img class="why-choose-us-items__icon"
+                                        src="/frontend/assets/media/images/icons/community.svg" alt="Community" />
+                                </div>
+                                <div class="why-choose-us-items__content">
+                                    <h5 class="why-choose-us-item__title">Community</h5>
+                                    <p class="fb-regular why-choose-us-item__desc">
+                                        A community of like-minded people who are passionate about
+                                        investing and want to learn more about it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="w-100"></div>
-
-                    <div class="col-md-12 single-feature">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="feature-image">
-                                    <img src="/frontend/img/feature1.png" alt="Auto-Compound Dashboard" />
-                                </div>
-                            </div>
-                            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6">
-                                <div class="feature-txt-in">
-                                    <h6>Auto-Compound Rewards</h6>
-                                    <h4>Earn More, Automatically</h4>
-                                    <p>Your rewards are reinvested instantly—no manual claiming. Watch your balance grow
-                                        exponentially with daily compounding and real-time yield optimization.</p>
-                                </div><!--/.feature-txt-in-->
-                            </div>
-                        </div>
-                    </div><!--/.single-feature-->
-
-                    <div class="col-md-12 single-feature">
-                        <div class="row align-items-center">
-                            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 order-md-1 order-2">
-                                <div class="feature-txt-in">
-                                    <h6>Live Analytics Dashboard</h6>
-                                    <h4>Track Every Penny in Real Time</h4>
-                                    <p>Monitor APY, rewards, staking history, and projected earnings with crystal-clear
-                                        charts. Get alerts for yield changes or new high-return pools.</p>
-                                </div><!--/.feature-txt-in-->
-                            </div>
-                            <div class="col-md-6 order-md-2 order-1 text-md-end mb-4 mb-md-0">
-                                <div class="feature-image">
-                                    <img src="/frontend/img/feature2.png" alt="Analytics Dashboard" />
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.single-feature-->
-
-                    <div class="col-md-12 single-feature">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="feature-image">
-                                    <img src="/frontend/img/feature3.png" alt="Flexible Unstaking" />
-                                </div>
-                            </div>
-                            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6">
-                                <div class="feature-txt-in">
-                                    <h6>Zero Lockups</h6>
-                                    <h4>Unstake Anytime, No Penalties</h4>
-                                    <p>Need access? Withdraw principal and rewards instantly. Full liquidity, zero risk
-                                        of being stuck—perfect for active portfolio management.</p>
-                                </div><!--/.feature-txt-in-->
-                            </div>
-                        </div>
-                    </div><!--/.single-feature-->
-
-                    <div class="col-md-12 single-feature">
-                        <div class="row align-items-center">
-                            <div class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-6 order-md-1 order-2">
-                                <div class="feature-txt-in">
-                                    <h6>Multi-Chain Staking</h6>
-                                    <h4>One Platform, All Major Networks</h4>
-                                    <p>Stake on Ethereum, BNB Chain, Polygon, Arbitrum, and more—without switching
-                                        wallets or apps. Reachtake unifies your staking strategy.</p>
-                                </div><!--/.feature-txt-in-->
-                            </div>
-                            <div class="col-md-6 order-md-2 order-1 text-md-end mb-4 mb-md-0">
-                                <div class="feature-image">
-                                    <img src="/frontend/img/feature4.png" alt="Multi-Chain Support" />
-                                </div>
-                            </div>
-                        </div>
-                    </div><!--/.single-feature-->
                 </div>
-            </div><!--/.container-->
+            </div>
         </section>
-        <!--amazing feature-->
 
-        <!--where-we-are-map-->
-        <section class="where-we-are-map">
+        <div class="container" style="margin-bottom: 250px; margin-top: 50px">
+            <center class="mb-5">
+                <h2 class="exchange__title">Top Market Stories</h2>
+
+                <p class="fb-regular why-choose-us__subtitle mt-4">
+                    Top stories from around the world of crypto, finance and technology.
+                    Stay up to date with the latest news and analysis from the world of
+                    cryptocurrency and blockchain.
+                </p>
+            </center>
+
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+
+                <script type="text/javascript" src="/frontend/s3.tradingview.com/external-embedding/embed-widget-timeline.js" async>
+                    {
+                        "feedMode": "all_symbols",
+                        "isTransparent": true,
+                        "displayMode": "regular",
+                        "width": "100%",
+                        "height": 550,
+                        "colorTheme": "dark",
+                        "locale": "en"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+
+        <section class="testimonial testimonial--v2">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-6 col-lg-6 col-md-12">
-                        <div class="title">
-                            <h6>Available in 150+ Countries</h6>
-                            <h2>Stake from Anywhere</h2>
-                            <p>Reachtake is borderless. Connect your wallet from any corner of the globe and start
-                                earning high-yield rewards instantly.</p>
-                            <p>Need help? Our 24/7 support team is here via live chat, email, or Discord. <a
-                                    href="#">Get in touch</a> anytime.</p>
+                <div class="testimonial__container">
+                    <h2 class="testimonial__title--mobile">
+                        What the media says about us?
+                    </h2>
+                    <div class="testimonial-carousel__container">
+                        <h2 class="testimonial__title">What the media says about us?</h2>
+                        <div class="testimonial-carousel__box">
+                            <div class="testimonial-carousel">
+                                <div data-slick-title="Fores" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “We appreciate the transparency and security measures in
+                                        place on this platform. Knowing our investments are
+                                        safeguarded while we trade in a fair environment that
+                                        gives peace of mind.”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        Data from Fores, 2024
+                                    </p>
+                                </div>
+                                <div data-slick-title="Neweeks" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “We love the variety of assets available on this platform.
+                                        From stocks to cryptocurrencies, the range is impressive,
+                                        and the real-time data feeds keep everyone informed.”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        Data from Neweeks, 2025
+                                    </p>
+                                </div>
+
+                                <div data-slick-title="MetroNew" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “The intuitive interface allows for effortless navigation
+                                        through charts and analytics, making it perfect for both
+                                        beginners and seasoned traders.”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        Data from MetroNew, 2025
+                                    </p>
+                                </div>
+                                <div data-slick-title="EuroNew" data-slick-number="1"
+                                    class="testimonial-carousel__items">
+                                    <p class="fd-md testimonial-carousel__detail">
+                                        “The integration of social trading features allows us to
+                                        follow and copy successful traders, which has been a game
+                                        changer. ”
+                                    </p>
+                                    <p class="fb-lg fb-lg--bold testimonial-carousel__author">
+                                        Data from EuroNew, 2025
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slick__pagination">
+                                <div class="testimonial-carousel__arrows">
+                                    <a href="#" class="testimonial-carousel__prev"><img
+                                            src="/frontend/assets/media/images/icons/arrow-circle-left.svg"
+                                            alt="Previous" />
+                                    </a><a href="#" class="testimonial-carousel__next"><img
+                                            src="/frontend/assets/media/images/icons/arrow-circle-right.svg"
+                                            alt="Next" /></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-12 text-center">
-                        <div class="every-map-in">
-                            <img src="/frontend/img/map-every.png" alt="Reachtake Global Reach" />
+                    <div class="testimonial-media">
+                        <div class="testimonial-media__items active">
+                            <p class="testimonial-media__items-title">Neweeks</p>
+                        </div>
+                        <div class="testimonial-media__items next">
+                            <p class="testimonial-media__items-title">Fores</p>
+                        </div>
+                        <div class="testimonial-media__items next-2">
+                            <p class="testimonial-media__items-title">MetroNew</p>
+                        </div>
+                        <div class="testimonial-media__items prev">
+                            <p class="testimonial-media__items-title">EuroNew</p>
                         </div>
                     </div>
                 </div>
-            </div><!--/.container-->
+            </div>
+        </section> --}}
+        <section class="mobile-platform mobile-platform--v2">
+            <div class="mobile-platform__background mobile-platform__background--grid">
+                <img class="mobile-platform__grid-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-hero-grid-bg.png"
+                    alt="Background Grid Mobile Platform" />
+            </div>
+            <div class="mobile-platform__background mobile-platform__background--pattern">
+                <img class="mobile-platform__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-mobile-apps-pattern.png"
+                    alt="Background Pattern Mobile Platform" />
+            </div>
+            <div class="mobile-platform__background--mobile mobile-platform__background--grid">
+                <img class="mobile-platform__grid-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-hero-grid.png"
+                    alt="Background Grid Mobile Platform" />
+            </div>
+            <div class="mobile-platform__background--mobile mobile-platform__background--pattern">
+                <img class="mobile-platform__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-mobile-apps-pattern.png"
+                    alt="Background Pattern Mobile Platform" />
+            </div>
+            <div class="container">
+                <div class="mobile-platform__container">
+                    <div class="mobile-platform__illustration">
+                        <img src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-mobile-apps-illustration.svg"
+                            alt="Illustration" />
+                    </div>
+                    <div class="mobile-platform__content">
+                        <h2 class="mobile-platform__title">
+                            Grow your crypto portfolio on the go.
+                        </h2>
+                        <p class="fb-regular mobile-platform__subtitle">
+                            A full-featured crypto exchange right in your pocket. Buy, sell, and trade digital assets
+                            anytime, anywhere.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!--where-we-are-map-->
 
+        <section class="cta">
+            <div class="cta__background cta__background--pattern">
+                <img class="cta__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/landing-page-v2-cta-pattern.png"
+                    alt="Background Pattern CTA" />
+            </div>
+            <div class="cta__background--mobile cta__background--pattern">
+                <img class="cta__pattern-bg"
+                    src="/frontend/assets/media/images/landing-page-v2/mobile-landing-page-v2-cta-pattern.png"
+                    alt="Background Pattern CTA" />
+            </div>
+            <div class="container mb-5">
+                <div class="cta__container text-center">
+                    <p class="fd-sm cta__subtitle">
+                        Ready to begin trading and investing?
+                    </p>
+                    <h3 class="cta__title">Join Over 650,000 Satisfied Traders & Growing</h3>
 
-
-        <!--what client say-->
-        <section class="testimonials-sec" id="testi_id">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div class="title text-center">
-                            <h6>Testimonials</h6>
-                            <h2>What Stakers Are Saying</h2>
-                            <p>See why thousands trust Reachtake to grow their assets—real results, real users, real
-                                rewards.</p>
-                        </div><!--/.title-->
-                    </div>
-                    <div class="w-100"></div>
-                    <div class="col-md-10 offset-md-1">
-                        <div class="slider-content-feed">
-                            <div class="row">
-                                <div class="col-md-8 offset-md-2">
-                                    <div class="slider slider-single">
-                                        <div>
-                                            <div class="text-inside">
-                                                <p>"Reachtake turned my idle ETH into a compounding machine. 18% APY
-                                                    with zero lockups—unstaked in seconds. Finally, a platform that
-                                                    respects my time and capital."</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="text-inside">
-                                                <p>“The dashboard is unreal. I can see every reward tick in real time.
-                                                    Switched from three other platforms—Reachtake does it all, cleaner
-                                                    and faster.”</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="text-inside">
-                                                <p>"I was skeptical about high yields, but their smart contracts are
-                                                    audited and transparent. Been staking BNB for 6 months—zero issues,
-                                                    consistent payouts."</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="text-inside">
-                                                <p>"Support actually responds in under 5 minutes. Had a wallet sync
-                                                    issue at 2 AM—fixed instantly. This is how staking should feel:
-                                                    effortless and secure."</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="text-inside">
-                                                <p>"Auto-compounding is a game changer. My stablecoin position grew 23%
-                                                    in 90 days without lifting a finger. Reachtake just works."</p>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="text-inside">
-                                                <p>"No hidden fees, no surprises. What you see is what you earn.
-                                                    Finally, a staking platform that doesn’t treat users like ATMs."</p>
-                                            </div>
-                                        </div>
-                                    </div><!--/.slider-->
-                                </div>
-                            </div>
-                        </div><!--/.slider-content-feed-->
-
-                        <div class="slider-thumb">
-                            <div class="row">
-                                <div class="col-md-8 offset-md-2">
-                                    <div class="slider slider-nav">
-                                        <div>
-                                            <div class="client-thumb-nav">
-                                                <img src="/frontend/img/client1.jpg" alt="Alex Chen" />
-                                                <div class="client-name">
-                                                    <h4>Alex Chen</h4>
-                                                    <h5>DeFi Enthusiast</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="client-thumb-nav">
-                                                <img src="/frontend/img/client2.jpg" alt="Sarah Miller" />
-                                                <div class="client-name">
-                                                    <h4>Sarah Miller</h4>
-                                                    <h5>Yield Farmer</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="client-thumb-nav">
-                                                <img src="/frontend/img/client3.jpg" alt="Marcus Reed" />
-                                                <div class="client-name">
-                                                    <h4>Marcus Reed</h4>
-                                                    <h5>Portfolio Manager</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="client-thumb-nav">
-                                                <img src="/frontend/img/client4.jpg" alt="Lina Torres" />
-                                                <div class="client-name">
-                                                    <h4>Lina Torres</h4>
-                                                    <h5>Early Adopter</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="client-thumb-nav">
-                                                <img src="/frontend/img/client5.jpg" alt="James Park" />
-                                                <div class="client-name">
-                                                    <h4>James Park</h4>
-                                                    <h5>Passive Income Seeker</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <div class="client-thumb-nav">
-                                                <img src="/frontend/img/client2.jpg" alt="Emma Liu" />
-                                                <div class="client-name">
-                                                    <h4>Emma Liu</h4>
-                                                    <h5>Web3 Investor</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div><!--/.slider-nav-->
-                                </div>
-                            </div>
-                        </div><!--/.slider-thumb-->
+                    <div class="mt-3">
+                        <a href="{{ route('register') }}" class="btn btn-sm" style="background: #605dff">Get
+                            Started</a>
                     </div>
                 </div>
-            </div><!--/.container-->
+            </div>
         </section>
-        <!--what client say-->
-
-        <!--help desk-->
-        <section class="help-desk-sec">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="help-inside-full">
-                            <div class="row">
-                                <div class="col-xl-4 col-lg-4 col-md-8 offset-xl-4 offset-lg-4 offset-md-2">
-                                    <div class="title text-center">
-                                        <h6>Support</h6>
-                                        <h2>Help Center</h2>
-                                        <p>Get instant answers to staking, wallets, rewards, and security—24/7 guidance
-                                            at your fingertips.</p>
-                                    </div><!--/.title-->
-                                </div>
-                                <div class="w-100"></div>
-                                <div class="col-md-3 offset-md-3">
-                                    <div class="single-link">
-                                        <a href="#">
-                                            <div class="icon">
-                                                <img src="/frontend/img/icon/help1.png" alt="User Guide" />
-                                            </div>
-                                            <h4>Staking Guide</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="single-link two">
-                                        <a href="#">
-                                            <div class="icon">
-                                                <img src="/frontend/img/icon/help2.png" alt="FAQ" />
-                                            </div>
-                                            <h4>FAQ</h4>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!--/.help-inside-full-->
-                    </div>
-                </div>
-            </div><!--/.container-->
-        </section>
-        <!--help desk-->
-
-        <!--user gallery and fun fact-->
-        <section class="user-gl-nd-fun">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 offset-xl-3 col-lg-6 offset-lg-3 col-md-8 offset-md-2">
-                        <div class="title text-center">
-                            <h6>See the Platform in Action</h6>
-                            <h2>Staker Gallery</h2>
-                            <p>Real dashboards. Real rewards. Real growth. Explore how users are compounding with
-                                Reachtake worldwide.</p>
-                        </div><!--/.title-->
-                    </div>
-                    <div class="w-100"></div>
-                </div>
-            </div><!--/.container-->
-
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="owl-carousel" id="gallerys-owl">
-                            <div>
-                                <div class="gl-img">
-                                    <img src="/frontend/img/gallery-staking1.jpg" alt="User earning 22% APY on BNB" />
-                                </div>
-                            </div>
-                            <div>
-                                <div class="gl-img">
-                                    <img src="/frontend/img/gallery-staking2.jpg"
-                                        alt="Auto-compounding dashboard in action" />
-                                </div>
-                            </div>
-                            <div>
-                                <div class="gl-img">
-                                    <img src="/frontend/img/gallery-staking3.jpg" alt="Mobile staking interface" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.container-fluid-->
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="single-fact one">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/fun-fact1.png" alt="" />
-                            </div>
-                            <h3><span class="counter">100</span>%</h3>
-                            <p>Uptime</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-fact">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/fun-fact2.png" alt="" />
-                            </div>
-                            <h3><span class="counter">50</span>+</h3>
-                            <p>Staking Pools</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-fact one">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/fun-fact3.png" alt="" />
-                            </div>
-                            <h3><span class="counter">250</span>k+</h3>
-                            <p>Active Stakers</p>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="single-fact">
-                            <div class="icon">
-                                <img src="/frontend/img/icon/fun-fact4.png" alt="" />
-                            </div>
-                            <h3><span class="counter">12</span></h3>
-                            <p>Audits Passed</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/.container-->
-        </section>
-        <!--user gallery and fun fact-->
-
-
-
-        <!--contact us-->
-        <section class="contactud-sec" id="contact_id">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-5 col-lg-5 col-md-12">
-                        <div class="contact-inside-title title">
-                            <h6>CONTACT US</h6>
-                            <h2>We're Here to Help</h2>
-                            <p>Have questions about staking, rewards, or security? Drop us a message—we respond in under
-                                5 minutes, 24/7.</p>
-                        </div>
-                        <div class="contact-form-in">
-                            <form>
-                                <input type="text" placeholder="Name*" required />
-                                <input type="email" placeholder="Email*" required />
-                                <textarea rows="4" placeholder="Your Message*" required></textarea>
-                                <button type="submit" class="btn">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-xl-7 col-lg-7 col-md-12 text-center mt-5 mt-lg-0">
-                        <div class="contact-right-img">
-                            <img src="./frontend/img/contact-right.png" alt="Reachtake Support Team" />
-                        </div>
-                    </div>
-                </div>
-
-                <div class="w-100"></div>
-
-                <div class="footer-copyright">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="copyright">
-                                <p>© 2025 Reachtake. All Rights Reserved.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 text-md-end">
-                            <ul class="social-footer">
-                                <li><a href="#" class="btn" aria-label="Twitter"><i
-                                            class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" class="btn" aria-label="Discord"><i
-                                            class="fab fa-discord"></i></a></li>
-                                <li><a href="#" class="btn" aria-label="Telegram"><i
-                                            class="fab fa-telegram-plane"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div><!--/.footer-copyright-->
-            </div><!--/.container-->
-        </section>
-        <!--contact us-->
     </main>
 </x-guest-layout>
 {{--  --}}

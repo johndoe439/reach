@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 
 <html lang="en">
 
@@ -92,7 +92,65 @@
         </div>
         <!--/.CONTAINER-->
     </nav>
-    <!-- /.navbar -->
+    <!-- /.navbar --> --}}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="Reach Take | Staking " />
+    <title> Reach Take </title>
+
+    <!-- Standard Favicon -->
+    <link rel="icon" href="/frontend/img/logo.png">
+    <meta name="description" content="Best crypto trading  , portfolio management " />
+
+
+
+
+    <link href="/frontend/assets/brand/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="/frontend/assets/css/styles.bundle.css" rel="stylesheet" />
+    <link href="/frontend/assets/plugins/slick/slick.css" rel="stylesheet" />
+    <link href="/frontend/assets/css/pages/landing-page-v2.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <nav class="navbar navbar-expand-lg header-navbar header-navbar--v2">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="/frontend/img/logo.png" width="150px" alt="Tradrax-Ai" /> </a><button
+                class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="/frontend/assets/media/images/icons/menu.svg" alt="MENU" />
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navbar-collapse__content">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Terms</a>
+                        </li>
+
+                    </ul>
+                    <div class="navbar-buttons">
+                        <a href="{{ route('login') }}" class="btn btn-secondary btn-sm">Sign in</a>
+                        <a href=" {{ route('register') }}" class="btn btn-sm" style="background: #605dff">Get
+                            Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
     {{ $slot }}
 
 
@@ -239,26 +297,79 @@
         </script>
     </div>
 
-    <!--jquery-->
-    <script src="/frontend/js/jquery-1.12.4.min.js"></script>
-    <!--bootstrap v4 js-->
-    <script src="/frontend/js/vendor/bootstrap.min.js"></script>
-    <!--popper js-->
-    <script src="/frontend/js/vendor/popper.min.js"></script>
-    <!--video popup-->
-    <script src="/frontend/js/vendor/video.popup.js"></script>
-    <!--slick slider-->
-    <script src="/frontend/js/vendor/slick-min.js"></script>
-    <script src="/frontend/js/venobox.min.js"></script>
-    <!-- counter js -->
-    <script src="/frontend/js/vendor/counter.js"></script>
-    <!--owl js-->
-    <script src="/frontend/js/vendor/owl-carousel.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__item footer-item-main">
+                    <img class="footer-item-main__logo" src="/frontend/assets/brand/light.png" width="150px"
+                        alt="Tradrax-Ai" />
+                    {{-- <p class="fb-lg footer-item-main__desc">
+                        Best crypto trading bots, algorithmic orders, portfolio management
+                        and free Demo mode — all in one place.
+                    </p>
 
-    <!--easing js-->
-    <script src="/frontend/js/vendor/easing.js"></script>
-    <!--main script-->
-    <script src="./frontend/js/main.js"></script>
+                    <p class="fb-lg footer-item-main__desc">
+                        892 Woodland Road, New Charleyhaven, Minnesota - 03884, US
+                    </p> --}}
+                    <div class="footer-item-main__socmed">
+                        <a href="#" class="footer-socmed"><img class="footer-item-main__logo"
+                                src="/frontend/assets/media/images/icons/logo-linkedin.svg" alt="Linkedin" /> </a><a
+                            href="#" class="footer-socmed"><img class="footer-item-main__logo"
+                                src="/frontend/assets/media/images/icons/logo-facebook.svg" alt="Facebook" /> </a><a
+                            href="#" class="footer-socmed"><img class="footer-item-main__logo"
+                                src="/frontend/assets/media/images/icons/logo-ig.svg" alt="Instagram" /></a>
+                    </div>
+                </div>
+                <div class="footer__item footer-item-quick-links">
+                    <h6 class="footer__item-title">Company</h6>
+                    <div class="footer-quick-links">
+                        <a href="#" class="fb-md footer-quick-links__link">About</a>
+                        <a href="#" class="fb-md footer-quick-links__link">Terms & Conditions</a>
+                        <a href="#" class="fb-md footer-quick-links__link">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footer__item footer-item-quick-links">
+                    <h6 class="footer__item-title">Resources</h6>
+                    <div class="footer-quick-links">
+                        <a href="{{ route('login') }}" class="fb-md footer-quick-links__link">Buy/Sell</a>
+
+                        <a href="{{ route('login') }}" class="fb-md footer-quick-links__link">Trade
+                            Now</a>
+                        <a href="{{ route('register') }}" class="fb-md footer-quick-links__link">Investments</a>
+                    </div>
+                </div>
+                <div class="footer__item footer-item-updates">
+                    <h6 class="footer__item-title">Submit for updates.</h6>
+                    <p class="fb-md footer-item-updates__desc">
+                        Subscribe to get update and notifications on our latest products &
+                        offers.
+                    </p>
+                    <div class="mini-form-sm__box">
+                        <form class="mini-form">
+                            <input class="form-control form-control-sm mini-form__input"
+                                placeholder="Enter you email address" autocomplete="off" />
+                            <input type="submit" class="btn btn-sm mini-form__submit" style="background: #605dff"
+                                value="Send" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__foot">
+                <p class="fb-md footer-foot__copyright">
+                    Reach Take ©. All rights reserved.
+                </p>
+                <div class="footer-foot__tos-privacy">
+                    <a href="#" class="fb-md footer-foot__link">Term of Service</a>
+                    <span class="separator"></span>
+                    <a href="#" class="fb-md footer-foot__link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/frontend/assets/js/scripts.bundle.js"></script>
+    <script src="/frontend/assets/plugins/slick/slick.min.js"></script>
+    <script src="/frontend/assets/js/custom/custom-select.js"></script>
+    <script src="/frontend/assets/js/pages/landing-page-v2.js"></script>
 
     <!-- Smartsupp Live Chat script -->
     <script type="text/javascript">
