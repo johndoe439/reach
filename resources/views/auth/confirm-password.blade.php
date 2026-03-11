@@ -64,9 +64,7 @@
                         <h3 class="text-xl md:text-[28px] leading-none font-semibold text-heading">
                             Welcome back!
                         </h3>
-                        <p class="font-medium text-gray-500 dark:text-dark-text mt-4 px-[10%]">
-                            Whether you're launching a stunning online store optimizing your our object-oriented
-                        </p>
+
                     </div>
                 </div>
             </div>
@@ -76,40 +74,26 @@
             <div class="col-span-full lg:col-span-6 w-full lg:max-w-[600px]">
                 <div
                     class="border border-form dark:border-dark-border p-5 md:p-10 rounded-20 md:rounded-30 dk-theme-card-square">
-                    <h3 class="text-xl md:text-[28px] leading-none font-semibold text-heading">
-                        Create a New Password
-                    </h3>
                     <p class="font-medium text-gray-500 dark:text-dark-text mt-4">
-                        Welcome Back! Log in to your account
+                        Welcome Back! Confirm your password
                     </p>
-                    <form action="https://template.codexshaper.com/admin/student-profile.html"
-                        class="leading-none mt-8">
+
+                   
+
+
+                    <form method="POST" action="{{ route('password.confirm') }}"class="leading-none mt-8">
                         <div class="mt-5">
                             <label for="oldPassword" class="form-label">Password</label>
                             <div class="relative">
-                                <input type="password" id="oldPassword" placeholder="Old Password" required
-                                    class="form-input px-4 py-3.5 rounded-lg">
-                                <label for="toggleOldPass"
-                                    class="size-8 rounded-md flex-center hover:bg-gray-200 dark:hover:bg-dark-icon foucs:bg-gray-200 dark:foucs:bg-dark-icon position-center !left-auto -right-2.5">
-                                    <input type="checkbox" id="toggleOldPass" class="inputTypeToggle peer/it" hidden>
-                                    <i
-                                        class="ri-eye-off-line text-gray-500 dark:text-dark-text peer-checked/it:before:content-['\ecb5']"></i>
-                                </label>
+                                <input type="password" id="oldPassword" placeholder="Old Password"
+                                    class="form-input px-4 py-3.5 rounded-lg"  name="password" required
+                                    autocomplete="current-password">
+
                             </div>
                         </div>
-                        <div class="mt-5 mb-7">
-                            <label for="newPassword" class="form-label">Confirm Password</label>
-                            <div class="relative">
-                                <input type="password" id="newPassword" placeholder="New Password" required
-                                    class="form-input px-4 py-3.5 rounded-lg">
-                                <label for="toggleNewPass"
-                                    class="size-8 rounded-md flex-center hover:bg-gray-200 dark:hover:bg-dark-icon foucs:bg-gray-200 dark:foucs:bg-dark-icon position-center !left-auto -right-2.5">
-                                    <input type="checkbox" id="toggleNewPass" class="inputTypeToggle peer/it" hidden>
-                                    <i
-                                        class="ri-eye-off-line text-gray-500 dark:text-dark-text peer-checked/it:before:content-['\ecb5']"></i>
-                                </label>
-                            </div>
-                        </div>
+                        <x-input-error :messages="$errors->get('password')" class="mt-2" />
+
+
                         <!-- Submit Button -->
                         <button class="btn b-solid btn-primary-solid w-full dk-theme-card-square">Confirm
                             Password</button>
